@@ -1,0 +1,77 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8" >
+        <title> Katchau Marketplace </title>
+        <script src="../js/adm_excluir.js"></script>
+        
+        <link rel="stylesheet" href="../css/fontawesome-free-web/css/all.css"/>
+        <link rel="stylesheet" href="../css/adm_excluir.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="icon" href="../imgs/logo.png">
+    </head>
+
+    <body>
+        <header class="header">
+            <img class="img" src="../imgs/logo.png" alt="">
+  
+            <div class="dropdown">
+                <i id="menu" class="fa-solid fa-bars fa-xl"></i>
+                <button class="button-header" type="button">MENU</button>
+                <div class="dropdown-menu">
+                    <a  class="link-header" href="../index.html">Página Inicial</a>
+                    <a class="link-header" href="./adm_cadastrar.html">Cadastrar Produto</a>
+                </div>
+            </div>
+
+        </header>
+        
+        <main>
+            <h4 class="title">EXCLUIR PRODUTO</h4>
+
+            <div id="produtos"></div>
+
+            <div class="form">
+            <label id="texto"  for="delete_product">Produto (Indique o ID):</label> 
+            <input type="text" id="product"> 
+            <br>
+
+
+            <button type="submit" class="button" onclick="excluir()">Excluir Produto</button>
+            </div>
+
+
+            <div id="products-list" ></div>
+        </main>
+        
+
+        <footer class="footer" >
+            <div class="footer-cima">
+            <div class="logo-footer">
+                <img src="../imgs/logo.png" alt="logo do site katchau" class="logo_footer">
+            </div>
+    
+            <div class="social-media">
+                    <h4 class="footer_titulo" >Redes sociais Katchau</h4>
+       
+                    <a  href=""><i id="facebook" class="fa-brands fa-facebook"></i>Facebook</a>
+                    <a  href=""><i id="insta"  class="fa-brands fa-instagram"></i>Instagram</a>
+                    <a  href=""><i id="twitter" class="fa-brands fa-twitter"></i>Twitter</a>
+            </div>
+    
+            <div class="payment-methods">
+                <h4 class="footer_titulo" >Formas de pagamentos: </h4>
+                <i id="pix" class="fa-brands fa-pix"></i>
+                <i id="credito" class="fa-solid fa-credit-card"></i>
+            </div>
+           
+            <div >
+                <p class="footer-text" >&copy Direitos Autorais Reservados A Katchau LTDA</p>
+                <p class="footer-text">Fundada em 2023</p>
+            <div>
+        </footer>
+
+    </body>
+</html>
+
+

@@ -1,0 +1,81 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8" >
+        <title> Katchau Marketplace </title>
+
+        <script src="https://kit.fontawesome.com/52d98fe718.js" crossorigin="anonymous"></script>
+        <script src="../js/finalizarCompra.js"></script>
+        <link rel="stylesheet" href="../css/finalizarCompra.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="icon" href="../imgs/logo.png">
+    </head>
+
+    <body>
+        <header class="header">
+            <img class="img" src="../imgs/logo.png" alt="">
+            <div class="container">
+                <input class="text-header" type="text" name="search" id="search" placeholder="BUSCAR PRODUTO"> 
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </div>    
+            <div class="dropdown" >
+                <i id="menu" class="fa-solid fa-bars fa-xl"></i>    
+                <button class="button-header" type="button">MENU</button>
+                <div class="dropdown-menu">
+                    <a class="link-header" href="./adm_cadastrar.html">Cadastrar Produto</a>
+                    <a class="link-header" href="./adm_excluir.html">Excluir Produto</a>
+                    <a call="link-header" href="../index.html">Página Inicial</a>
+                </div>
+            </div>
+        </header>
+        
+        <div id="produtos">
+
+        </div>
+
+        <div>
+            <form id="formulario">
+                <p>Frete de R$35.00</p>
+                Forma de pagamento: <br>
+                <select name="pagamento">
+                    <option value="pix">PIX</option>
+                    <option value="credito">Crédito</option>
+                    <option value="debito">Débito</option>
+                </select>
+                <button type="button" class="order" onclick="venda()" >EFETUAR PAGAMENTO</button>
+            </form>
+            
+            <div class="pix-container"><img id="imagemPix" src="../imgs/qrcode.jpeg" class="pix"></div>
+            
+        </div>
+        
+        
+        
+        <footer class="footer" >
+            <div class="footer-cima">
+            <div class="logo-footer">
+                <img src="../imgs/logo.png" alt="logo do site katchau" class="logo_footer">
+            </div>
+    
+            <div class="social-media">
+                    <h4>Redes sociais Katchau</h4>
+       
+                    <a href=""><i class="fa-brands fa-facebook"></i>Facebook</a>
+                    <a href=""><i class="fa-brands fa-instagram"></i>Instagram</a>
+                    <a href=""><i class="fa-brands fa-twitter"></i>Twitter</a>
+            </div>
+    
+            <div class="payment-methods">
+                <h4>Formas de pagamentos: </h4>
+                <i class="fa-brands fa-pix"></i>
+                <i class="fa-solid fa-credit-card"></i>
+            </div>
+           
+        </div>
+            <p class="footer-text" >&copy Direitos Autorais Reservados A Katchau LTDA</p>
+            <p class="footer-text">Fundada em 2023</p>
+        </footer>
+    </body>
+</html>
